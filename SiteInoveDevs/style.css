@@ -30,7 +30,7 @@ body {
 /* Estilo para o cabeçalho */
 header {
     position: relative;
-    background-image: url(/assets/img/planeta.png);
+    background-image: url(/SiteInoveDevs/assets/img/Planeta.png);
     color: white;
     text-align: center;
     height: 80vh; /* Ocupa 80% da altura da tela */
