@@ -43,7 +43,9 @@ body {
 header {
     position: relative;
     background-color: #0e0e0e;
-    /*background-image: url(assets/img/Planeta.png);*/
+    /*background: url('../assets/img/sssssss.gif') no-repeat center center;
+    background-size: cover;*/
+    
     color: white;
     text-align: center;
     height: 80vh; /* Ocupa 80% da altura da tela */
@@ -52,6 +54,7 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 .contato-container {
     display: flex;
     flex-wrap: wrap; /* Permite quebra em telas menores */
@@ -591,18 +594,19 @@ button:hover {
 
 .cases-container {
     display: flex;
-    justify-content: center;
-    gap: 30px; /* Espaçamento maior entre os cards */
-    flex-wrap: wrap; /* Adapta os cards em telas menores */
+    justify-content: space-between; /* Espaço entre os cards */
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
+    padding: 20px;
 }
+
 
 .case-card {
     background-color: #fff;
-    border-radius: 15px; /* Bordas mais arredondadas */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra mais forte */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 1000px; /* Aumenta a largura */
-    height: 600px; /* Adiciona altura fixa */
+    width: calc(50% - 20px); /* Dois cards lado a lado com espaço */
     text-align: left;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -610,31 +614,29 @@ button:hover {
 
 .case-card img {
     width: 100%;
-    height: 250px; /* Imagem maior */
-    object-fit: cover; /* Garante que a imagem preencha o espaço */
+    height: 200px;
+    object-fit: cover;
 }
 
 .case-content {
-    padding: 30px; /* Espaço interno maior */
+    padding: 20px;
 }
-
 .case-content h2 {
-    font-size: 2rem; /* Tamanho maior para o título */
-    margin-bottom: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
     color: #007bff;
 }
 
 .case-content p {
-    font-size: 1.2rem; /* Texto descritivo maior */
-    margin-bottom: 20px;
+    font-size: 1rem;
+    margin-bottom: 15px;
     color: #666;
 }
-
 .case-link {
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1rem; /* Botão/link maior */
+    font-size: 1rem;
     transition: color 0.3s;
 }
 
