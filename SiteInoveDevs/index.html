@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bem-vindo à Inove Devs - Desenvolvimento de sistemas personalizados">
     <title>Inove Devs</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/img/IconInove.png">
 
@@ -19,15 +19,15 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#sobre">Quem somos</a></li>
-                <li><a href="#clientes">Cases</a></li>
                 <li><a href="#como-funciona">Desenvolvimento</a></li>
+                <li><a href="#cases">Cases</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
         <div class="hero-content">
             <h1>Bem-vindo à Inove Devs!</h1>
             <p>Transformamos suas ideias em projetos digitais completos</p>
-            <a href="#sobre" class="btn">Solicite um orçamento</a>
+            <a href="#contato" class="btn">Solicite um orçamento</a>
         </div>
     </header>
     
@@ -42,6 +42,21 @@
                     <br>
                     Especialistas em tecnologia prontos para atender às suas necessidades de software.
                 </p>
+                <div class="beneficios">
+                    <div class="beneficio-item">
+                        <img src="assets/img/certificate.png" alt="Qualidade">
+                        <p>Projetos com alta qualidade e eficiência.</p>
+                    </div>
+                    <div class="beneficio-item">
+                        <img src="assets/img/technology.png" alt="Inovação">
+                        <p>Inovação e tecnologia de ponta.</p>
+                    </div>
+                    <div class="beneficio-item">
+                        <img src="assets/img/hand-shake.png" alt="Compromisso">
+                        <p>Compromisso com os resultados dos clientes.</p>
+                    </div>
+                </div>
+                <a href="#contato" class="botao-acao">Saiba mais sobre nossos serviços &#10140;</a>
             </div>
             <div class="sobre-image">
                 <img src="assets/img/undrawteam.png" alt="Imagem de desenvolvimento de sistema">
@@ -53,29 +68,64 @@
     <section id="como-funciona" class="como-funciona">
         <div class="container">
             <h2>Como é feito seu sistema</h2>
+            <p>Soluções personalizadas de ponta a ponta para escalar seu negócio.</p>
             <div class="etapas">
                 <div class="etapa">
                     
-                    <h3>O que você necessita</h3>
-                    <p>Discutimos sua necessidade e fazemos o planejamento com identidade visual, protótipos, prazos e orçamentos.</p>
+                    <h3>Problematica</h3>
+                    <p>Identificamos e entendemos suas necessidades e desafios, analisando todos os detalhes do seu projeto. 
+                        Aqui, mapeamos os pontos críticos e traçamos um plano estratégico para alcançar os melhores resultados, sempre alinhados aos seus objetivos.
+                    </p>
+                    <a href="#contato">
+                        <h1>Quero contratar &#10140;</h1>
+                    <a>
                 </div>
                 <div class="etapa">
                     
                     <h3>Desenvolvimento</h3>
-                    <p>Desenvolvemos seu sistema com alta qualidade e conforme suas expectativas, utilizando as melhores tecnologias disponíveis.</p>
+                    <p>Transformamos suas ideias em realidade! Criamos protótipos, desenvolvemos a identidade visual e implementamos soluções sob medida. 
+                        O foco é construir um sistema eficiente, funcional e visualmente atraente.
+                    </p>
+                    <a href="#contato">
+                        <h1>Quero contratar &#10140;</h1>
+                    <a>
                 </div>
                 <div class="etapa">
                     
                     <h3>Conclusão</h3>
-                    <p>Entregamos o projeto pronto e damos suporte contínuo para eventuais ajustes ou melhorias, garantindo sua satisfação.</p>
+                    <p>Finalizamos o projeto com excelência, realizando ajustes finais e garantindo que tudo esteja conforme o planejado. 
+                        Entregamos um sistema pronto para uso, oferecendo suporte e acompanhando os primeiros passos para garantir seu sucesso.
+                    </p>
+                    <a href="#contato">
+                        <h1>Quero contratar &#10140;</h1>
+                    <a>
                 </div>
             </div>
         </div>
     </section>
+    
 
+    <section id="cases" class="cases-section">
+        <div class="container">
+            <h1>Nossos Cases</h1>
+            <p>Conheça alguns dos projetos que desenvolvemos com excelência.</p>
+            <div class="cases-container">
+                <!-- Case 1 -->
+                <div class="case-card">
+                    <img src="assets/img/Planeta.png" alt="Case 1">
+                    <div class="case-content">
+                        <h2>Geektopia - Uma Loja Geek</h2>
+                        <p>Desenvolvimento de um e-commerce especializado no mundo geek. A Geektopia oferece uma experiência única de compra, com um design moderno e intuitivo, pensado para atender fãs de cultura pop, tecnologia e entretenimento. O projeto incluiu a criação de uma plataforma completa com funcionalidades de catálogo, carrinho de compras e integração de pagamento, garantindo uma navegação rápida e segura.</p>
+                        <a href="https://www.geektopia.site" target="_blank" class="case-link">Ver mais &#10140;</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
     <!-- Contato -->   
 
-    <section class="contact-section">
+    <section id="contato" class="contact-section">
         <div class="contact-content">
             <h1>Vamos conversar sobre o seu projeto?</h1>
             <p>Já estamos empolgados em ver você por aqui. Saiba que falta pouco para marcarmos nossa conversa inicial, sem compromisso.</p>
@@ -122,14 +172,21 @@
 
     <script href="./js/script.js"></script>
     <script>
-        window.addEventListener("scroll", function () {
-            const navbar = document.querySelector(".navbar");
-            if (window.scrollY > 50) { // Ajuste o valor para a altura desejada
-                navbar.classList.add("scrolled");
-            } else {
-                navbar.classList.remove("scrolled");
-            }
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const target = document.querySelector(targetId);
+        const offset = 100; // Ajuste para a altura desejada
+        const topPosition = target.offsetTop - offset;
+
+        window.scrollTo({
+            top: topPosition,
+            behavior: 'smooth'
         });
+    });
+});
+
     </script>
 </body>
 </html>
