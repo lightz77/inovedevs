@@ -23,6 +23,7 @@
                 <li><a href="#como-funciona">Desenvolvimento</a></li>
                 <li><a href="#cases">Cases</a></li>
                 <li><a href="#contato">Contato</a></li>
+                
             </ul>
         </nav>
         <div class="hero-content">
@@ -111,16 +112,16 @@
                 <div class="case-card" data-aos="zoom-in">
                     <img src="assets/img/Planeta.png" alt="Case 1">
                     <div class="case-content">
-                        <h2>Geektopia - Uma Loja Geek</h2>
-                        <p>Desenvolvimento de um e-commerce especializado no mundo geek...</p>
+                        <h2>Geektopia </h2>
+                        <p>Desenvolvimento de um e-commerce especializado no mundo geek.</p>
                         <a href="https://www.geektopia.site" target="_blank" class="case-link">Ver mais &#10140;</a>
                     </div>
                 </div>
                 <div class="case-card" data-aos="zoom-in" data-aos-delay="200">
                     <img src="assets/img/Planeta.png" alt="Case 2">
                     <div class="case-content">
-                        <h2>Outro Projeto - Exemplo</h2>
-                        <p>Descrição do segundo case aqui...</p>
+                        <h2>AppleSpace</h2>
+                        <p>Uma loja de revenda de produtos Apple, 100% online e funcional.</p>
                         <a href="https://example.com" target="_blank" class="case-link">Ver mais &#10140;</a>
                     </div>
                 </div>
@@ -191,6 +192,14 @@
     });
 });
 
+    </script>
+    <script>
+        const toggleButton = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+toggleButton.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
     </script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script>
