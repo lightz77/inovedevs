@@ -1,19 +1,18 @@
-function menuShow() {
-    let menuMobile = document.querySelector('.mobile-menu');
-    if (menuMobile.classList.contains('open')) {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "assents/menu_white.png";
-    } else {
-        menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "assents/close_white.png";
-    }
-}
+// Seleciona o ícone de menu e a barra de navegação
+const menuIcon = document.getElementById('menu-icon');
+const navbar = document.getElementById('navbar');
 
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+// Abre ou fecha o menu ao clicar no ícone
+menuIcon.addEventListener('click', function() {
+  navbar.classList.toggle('active');
+});
 
-menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+// Fecha o menu quando um item for clicado
+const navItems = document.querySelectorAll('.nav-item');
+navItems.forEach(item => {
+  item.addEventListener('click', function() {
+    navbar.classList.remove('active');
+  });
 });
 
 window.addEventListener("scroll", function () {
@@ -25,7 +24,6 @@ window.addEventListener("scroll", function () {
                 navbar.classList.remove("scrolled");
         
     }
-        });
-
+});
 
         

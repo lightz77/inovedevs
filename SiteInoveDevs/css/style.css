@@ -2,15 +2,22 @@
 * {
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333; /* Ajustado para melhorar a legibilidade */
     background-color: #f9f9f9;
+    overflow-x: hidden;
 }
 
 .container {
@@ -24,12 +31,9 @@ header {
     position: relative;
     background-color: #0e0e0e;
     color: white;
-    text-align: center;
     height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .navbar {
@@ -53,14 +57,9 @@ header {
 .imglogo {
     height: 45px;
     width: 150px;
-    margin-left: 10vh;
 }
 
-.navbar .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+
 
 .navbar .nav-links li {
     display: inline;
@@ -77,25 +76,47 @@ header {
     color: #007bff;
 }
 
-/* Menu Mobile */
+/* Geral para o botão hamburguer */
 .menu-toggle {
     display: none;
+    cursor: pointer;
+    z-index: 1001;
 }
 
+.menu-toggle::before {
+    content: '\2630'; /* Ícone hamburguer */
+    font-size: 2rem;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+
 @media (max-width: 768px) {
-    .navbar {
-        padding: 10px 20px;
+
+    .navbar{
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    .menu-toggle {
+        display: block;
     }
 
     .nav-links {
         display: none;
         flex-direction: column;
-        background: #0e0e0e;
         position: absolute;
         top: 60px;
         right: 0;
+        background: #0e0e0e;
         width: 100%;
-        padding: 20px 0;
+        padding: 10px 0;
+        z-index: 1000;
     }
 
     .nav-links.active {
@@ -105,13 +126,6 @@ header {
     .nav-links li {
         text-align: center;
         margin: 10px 0;
-    }
-
-    .menu-toggle {
-        display: block;
-        font-size: 1.5rem;
-        cursor: pointer;
-        color: white;
     }
 }
 
