@@ -8,9 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-* {
-    outline: 1px solid red; /* Mostra a borda de todos os elementos */
-  }
+
   
 
 html{
@@ -30,7 +28,7 @@ body{
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
