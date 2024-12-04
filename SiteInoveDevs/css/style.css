@@ -11,7 +11,7 @@
 
 html, body {
     width: 100%;
-    overflow-x: hidden; /* Remove rolagem horizontal */
+        /* Remove rolagem horizontal */
   }
   
 
@@ -105,6 +105,11 @@ header {
 
 
 @media (max-width: 600px) {
+
+    html , body{
+        width: 100%;
+        overflow-x: hidden;
+    }
 
     header{
         width: 100vw;
