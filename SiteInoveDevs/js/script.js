@@ -1,17 +1,17 @@
-// Seleciona o ícone de menu e a barra de navegação
-const menuIcon = document.getElementById('menu-icon');
-const navbar = document.getElementById('navbar');
+// Seleciona os elementos do menu
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.nav-links');
+const menuLinks = document.querySelectorAll('.nav-links a');
 
-// Abre ou fecha o menu ao clicar no ícone
-menuIcon.addEventListener('click', function() {
-  navbar.classList.toggle('active');
+// Abre/fecha o menu ao clicar no botão
+menuToggle.addEventListener('click', () => {
+  nav-Links.classList.toggle('active');
 });
 
-// Fecha o menu quando um item for clicado
-const navItems = document.querySelectorAll('.nav-item');
-navItems.forEach(item => {
-  item.addEventListener('click', function() {
-    navbar.classList.remove('active');
+// Fecha o menu ao clicar em qualquer link
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    nav-links.classList.remove('active');
   });
 });
 
